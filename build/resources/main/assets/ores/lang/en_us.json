@@ -1,0 +1,31 @@
+{
+  "itemGroup.items_tab": "ORES Items",
+  "itemGroup.blocks_tab": "ORES Blocks",
+  "itemGroup.ores_tab": "ORES Ores",
+
+  "item.ores.exemple_gem": "Exemple Gem",
+  "item.ores.exemple_ingot": "Exemple Ingot",
+  "item.ores.raw_exemple": "Raw Exemple",
+
+  "block.ores.exemple_block": "Block of Exemple",
+  "block.ores.raw_exemple_block": "Block of Raw Exemple",
+
+  "block.ores.stone_exemple_ore": "Exemple Ore",
+  "block.ores.granite_exemple_ore": "Granite Exemple Ore",
+  "block.ores.diorite_exemple_ore": "Diorite Exemple Ore",
+  "block.ores.andesite_exemple_ore": "Andesite Exemple Ore",
+  "block.ores.deepslate_exemple_ore": "Deepslate Exemple Ore",
+  "block.ores.tuff_exemple_ore": "Tuff Exemple Ore",
+  "block.ores.cobblestone_exemple_ore": "Cobblestone Exemple Ore",
+  "block.ores.basalt_exemple_ore": "Basalt Exemple Ore",
+  "block.ores.polished_basalt_exemple_ore": "Polished Basalt Exemple Ore",
+  "block.ores.calcite_exemple_ore": "Calcite Exemple Ore",
+  "block.ores.netherrack_exemple_ore": "Netherrack Exemple Ore",
+  "block.ores.obsidian_exemple_ore": "Obsidian Exemple Ore",
+  "block.ores.end_stone_exemple_ore": "End Stone Exemple Ore",
+  "block.ores.sand_exemple_ore": "Sand Exemple Ore",
+  "block.ores.gravel_exemple_ore": "Gravel Exemple Ore",
+  "block.ores.dirt_exemple_ore": "Dirt Exemple Ore",
+  "block.ores.soul_sand_exemple_ore": "Soul Sand Exemple Ore",
+  "block.ores.soul_soil_exemple_ore": "Soul Soil Exemple Ore"
+}
