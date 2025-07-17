@@ -7,22 +7,15 @@ import java.util.List;
 
 public class ListVariants {
 
-    /**
-     * Une énumération pour définir les types de blocs possibles.
-     * C'est plus sûr qu'un simple String et évite les erreurs.
-     */
     public enum BlockType {
         BLOCK,
         FALLING_BLOCK,
         DROP_EXPERIENCE_BLOCK
     }
 
-    /**
-     * Le record utilise maintenant l'énumération BlockType.
-     */
     public record BlockVariant(
             String nameFormat,
-            BlockType blockType, // On utilise notre nouvelle énumération ici
+            BlockType blockType,
             float destroyTime,
             float explosionResistance,
             Object friction,
@@ -35,41 +28,39 @@ public class ListVariants {
             float explosionResistance,
             MapColor mapColor,
             SoundType soundType,
-            NoteBlockInstrument instrument
+            NoteBlockInstrument instrument,
+            boolean isFalling
     ) {}
 
     public record ItemVariant(
             String nameFormat
     ) {}
 
-    /**
-     * La liste des variantes utilise maintenant les valeurs de l'énumération.
-     */
     public static final List<BlockVariant> BLOCKS_STORAGE_VARIANTS = List.of(
             new BlockVariant("%s_block", BlockType.BLOCK, 5.0F, 6.0F, 0.6F, true),
-            new BlockVariant("raw_%s_block", BlockType.FALLING_BLOCK, 5.0F, 6.0F, false, true),
-            new BlockVariant("dust_%s_block", BlockType.FALLING_BLOCK, 0.5F, 0.5F, false, false)
+            new BlockVariant("raw_%s_block", BlockType.BLOCK, 5.0F, 6.0F, false, true),
+            new BlockVariant("dust_%s_block", BlockType.FALLING_BLOCK, 1.5F, 1.5F, false, true)
     );
 
     public static final List<OreVariant> BLOCKS_ORE_VARIANTS = List.of(
-            new OreVariant("stone", 3.0F, 3.0F, MapColor.STONE, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("granite", 3.0F, 3.0F, MapColor.DIRT, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("diorite", 3.0F, 3.0F, MapColor.QUARTZ, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("andesite", 3.0F, 3.0F, MapColor.STONE, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("deepslate", 4.5F, 3.0F, MapColor.DEEPSLATE, SoundType.DEEPSLATE, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("tuff", 3.0F, 3.0F, MapColor.TERRACOTTA_GRAY, SoundType.TUFF, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("cobblestone", 3.0F, 3.0F, MapColor.STONE, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("basalt", 2.0F, 3.0F, MapColor.COLOR_BLACK, SoundType.BASALT, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("polished_basalt", 2.0F, 3.0F, MapColor.COLOR_BLACK, SoundType.BASALT, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("calcite", 2.0F, 3.0F, MapColor.TERRACOTTA_WHITE, SoundType.CALCITE, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("netherrack", 1.4F, 3.0F, MapColor.NETHER, SoundType.NETHERRACK, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("obsidian", 50.0F, 1200.0F, MapColor.COLOR_BLACK, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("end_stone", 3.0F, 5.0F, MapColor.SAND, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("dirt", 1.5F, 3.0F, MapColor.DIRT, SoundType.GRAVEL, NoteBlockInstrument.BASEDRUM),
-            new OreVariant("sand", 1.5F, 3.0F, MapColor.SAND, SoundType.SAND, NoteBlockInstrument.SNARE),
-            new OreVariant("gravel", 1.6F, 3.0F, MapColor.STONE, SoundType.GRAVEL, NoteBlockInstrument.SNARE),
-            new OreVariant("soul_sand", 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SAND, NoteBlockInstrument.SNARE),
-            new OreVariant("soul_soil", 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SOIL, NoteBlockInstrument.SNARE)
+            new OreVariant("stone", 3.0F, 3.0F, MapColor.STONE, SoundType.STONE, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("granite", 3.0F, 3.0F, MapColor.DIRT, SoundType.STONE, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("diorite", 3.0F, 3.0F, MapColor.QUARTZ, SoundType.STONE, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("andesite", 3.0F, 3.0F, MapColor.STONE, SoundType.STONE, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("deepslate", 4.5F, 3.0F, MapColor.DEEPSLATE, SoundType.DEEPSLATE, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("tuff", 3.0F, 3.0F, MapColor.TERRACOTTA_GRAY, SoundType.TUFF, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("cobblestone", 3.0F, 3.0F, MapColor.STONE, SoundType.STONE, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("basalt", 2.0F, 3.0F, MapColor.COLOR_BLACK, SoundType.BASALT, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("polished_basalt", 2.0F, 3.0F, MapColor.COLOR_BLACK, SoundType.BASALT, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("calcite", 2.0F, 3.0F, MapColor.TERRACOTTA_WHITE, SoundType.CALCITE, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("netherrack", 1.4F, 3.0F, MapColor.NETHER, SoundType.NETHERRACK, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("obsidian", 50.0F, 1200.0F, MapColor.COLOR_BLACK, SoundType.STONE, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("end_stone", 3.0F, 5.0F, MapColor.SAND, SoundType.STONE, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("dirt", 1.5F, 3.0F, MapColor.DIRT, SoundType.GRAVEL, NoteBlockInstrument.BASEDRUM, false),
+            new OreVariant("sand", 1.5F, 3.0F, MapColor.SAND, SoundType.SAND, NoteBlockInstrument.SNARE, true),
+            new OreVariant("gravel", 1.6F, 3.0F, MapColor.STONE, SoundType.GRAVEL, NoteBlockInstrument.SNARE, true),
+            new OreVariant("soul_sand", 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SAND, NoteBlockInstrument.SNARE, false),
+            new OreVariant("soul_soil", 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SOIL, NoteBlockInstrument.SNARE, false)
     );
 
     public static final List<ItemVariant> ITEMS_SIMPLE_VARIANTS = List.of(

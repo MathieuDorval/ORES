@@ -1,7 +1,7 @@
 package com.ores.block;
 
 import com.ores.ORES;
-import com.ores.core.Registry; // On utilise la classe Registry
+import com.ores.core.Registry;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -17,7 +17,6 @@ public class ModBlocks {
 
     // --- GÉNÉRATION AUTOMATIQUE ---
     static {
-        // Boucle pour les blocs de stockage, utilisant le record BlockRegistryEntry
         for (Registry.BlockRegistryEntry entry : Registry.BLOCKS_STORAGE_ENTRIES) {
             DeferredBlock<Block> storageBlock = BLOCKS.registerBlock(
                     entry.ID(),
@@ -27,7 +26,6 @@ public class ModBlocks {
             REGISTERED_BLOCKS.put(entry.ID(), storageBlock);
         }
 
-        // Boucle pour les minerais, utilisant maintenant aussi la classe Registry
         for (Registry.BlockRegistryEntry entry : Registry.BLOCKS_ORE_ENTRIES) {
             DeferredBlock<Block> oreBlock = BLOCKS.registerBlock(
                     entry.ID(),
