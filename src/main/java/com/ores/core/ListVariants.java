@@ -1,31 +1,34 @@
 package com.ores.core;
 
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SandBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import java.util.List;
-import java.util.function.Function;
 
 public class ListVariants {
 
     /**
-     * Définit les propriétés d'une variante de bloc.
-     * Ajout de blockConstructor pour définir le type de bloc dynamiquement.
+     * Une énumération pour définir les types de blocs possibles.
+     * C'est plus sûr qu'un simple String et évite les erreurs.
+     */
+    public enum BlockType {
+        BLOCK,
+        FALLING_BLOCK,
+        DROP_EXPERIENCE_BLOCK
+    }
+
+    /**
+     * Le record utilise maintenant l'énumération BlockType.
      */
     public record BlockVariant(
             String nameFormat,
-            Function<BlockBehaviour.Properties, ? extends Block> blockConstructor,
+            BlockType blockType, // On utilise notre nouvelle énumération ici
             float destroyTime,
             float explosionResistance,
-            Object friction
+            Object friction,
+            boolean dropsOnBreak
     ) {}
 
-    /**
-     * Définit les propriétés d'une variante de minerai.
-     */
     public record OreVariant(
             String name,
             float destroyTime,
@@ -35,27 +38,20 @@ public class ListVariants {
             NoteBlockInstrument instrument
     ) {}
 
-    /**
-     * Définit les propriétés d'une variante d'item simple.
-     */
     public record ItemVariant(
             String nameFormat
     ) {}
 
     /**
-     * Liste des variantes pour les blocs de stockage (blocs pleins, blocs de matériaux bruts).
-     * Le constructeur est maintenant défini ici. Pour le moment, c'est Block::new pour tous.
+     * La liste des variantes utilise maintenant les valeurs de l'énumération.
      */
-    public static final List<BlockVariant> STORAGE_VARIANTS = List.of(
-            new BlockVariant("%s_block", Block::new, 5.0F, 6.0F, 0.6F),
-            new BlockVariant("raw_%s_block", Block::new, 5.0F, 6.0F, false),
-            new BlockVariant("dust_%s_block", Block::new, 5.0F, 6.0F, false)
+    public static final List<BlockVariant> BLOCKS_STORAGE_VARIANTS = List.of(
+            new BlockVariant("%s_block", BlockType.BLOCK, 5.0F, 6.0F, 0.6F, true),
+            new BlockVariant("raw_%s_block", BlockType.FALLING_BLOCK, 5.0F, 6.0F, false, true),
+            new BlockVariant("dust_%s_block", BlockType.FALLING_BLOCK, 0.5F, 0.5F, false, false)
     );
 
-    /**
-     * Liste des variantes pour les minerais, définissant la roche dans laquelle ils apparaissent.
-     */
-    public static final List<OreVariant> ORE_VARIANTS = List.of(
+    public static final List<OreVariant> BLOCKS_ORE_VARIANTS = List.of(
             new OreVariant("stone", 3.0F, 3.0F, MapColor.STONE, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
             new OreVariant("granite", 3.0F, 3.0F, MapColor.DIRT, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
             new OreVariant("diorite", 3.0F, 3.0F, MapColor.QUARTZ, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
@@ -76,10 +72,7 @@ public class ListVariants {
             new OreVariant("soul_soil", 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SOIL, NoteBlockInstrument.SNARE)
     );
 
-    /**
-     * Liste des variantes pour les items simples (lingots, pépites, etc.).
-     */
-    public static final List<ItemVariant> SIMPLE_ITEM_VARIANTS = List.of(
+    public static final List<ItemVariant> ITEMS_SIMPLE_VARIANTS = List.of(
             new ItemVariant("raw_%s"),
             new ItemVariant("%s_ingot"),
             new ItemVariant("%s_nugget"),

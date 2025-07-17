@@ -1,7 +1,7 @@
 package com.ores.creative;
 
 import com.ores.ORES;
-import com.ores.block.ModBlocks;
+import com.ores.core.Registry;
 import com.ores.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -18,38 +18,42 @@ public class ModCreativeTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.register("items_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.items_tab"))
             .icon(() -> {
-                if (!ModItems.SIMPLE_ITEM_NAMES.isEmpty()) {
-                    return new ItemStack(ModItems.getItem(ModItems.SIMPLE_ITEM_NAMES.getFirst()).get());
+                if (!Registry.ITEMS_SIMPLE_ENTRIES.isEmpty()) {
+                    return new ItemStack(ModItems.getItem(Registry.ITEMS_SIMPLE_ENTRIES.getFirst().ID()).get());
                 }
-                return new ItemStack(Items.IRON_INGOT); // Fallback icon
+                return new ItemStack(Items.IRON_INGOT);
             })
             .displayItems((parameters, output) -> {
-                ModItems.SIMPLE_ITEM_NAMES.forEach(name -> output.accept(ModItems.getItem(name).get()));
+                for (Registry.ItemRegistryEntry entry : Registry.ITEMS_SIMPLE_ENTRIES) {
+                    output.accept(ModItems.getItem(entry.ID()).get());
+                }
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BLOCKS_TAB = CREATIVE_MODE_TABS.register("blocks_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.blocks_tab"))
             .icon(() -> {
-                if (!ModBlocks.STORAGE_BLOCK_NAMES.isEmpty()) {
-                    return new ItemStack(ModItems.getItem(ModBlocks.STORAGE_BLOCK_NAMES.getFirst()).get());
+                if (!Registry.BLOCKS_STORAGE_ENTRIES.isEmpty()) {
+                    return new ItemStack(ModItems.getItem(Registry.BLOCKS_STORAGE_ENTRIES.getFirst().ID()).get());
                 }
-                return new ItemStack(Items.IRON_BLOCK); // Fallback icon
+                return new ItemStack(Items.IRON_BLOCK);
             })
             .displayItems((parameters, output) -> {
-                ModBlocks.STORAGE_BLOCK_NAMES.forEach(name -> output.accept(ModItems.getItem(name).get()));
-            }).build());
+                for (Registry.BlockRegistryEntry entry : Registry.BLOCKS_STORAGE_ENTRIES) {
+                    output.accept(ModItems.getItem(entry.ID()).get());
+                }            }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ORES_TAB = CREATIVE_MODE_TABS.register("ores_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.ores_tab"))
             .icon(() -> {
-                if (!ModBlocks.ORE_BLOCK_NAMES.isEmpty()) {
-                    return new ItemStack(ModItems.getItem(ModBlocks.ORE_BLOCK_NAMES.getFirst()).get());
+                if (!Registry.BLOCKS_ORE_ENTRIES.isEmpty()) {
+                    return new ItemStack(ModItems.getItem(Registry.BLOCKS_ORE_ENTRIES.getFirst().ID()).get());
                 }
-                return new ItemStack(Items.IRON_ORE); // Fallback icon
+                return new ItemStack(Items.IRON_ORE);
             })
             .displayItems((parameters, output) -> {
-                ModBlocks.ORE_BLOCK_NAMES.forEach(name -> output.accept(ModItems.getItem(name).get()));
-            }).build());
+                for (Registry.BlockRegistryEntry entry : Registry.BLOCKS_ORE_ENTRIES) {
+                    output.accept(ModItems.getItem(entry.ID()).get());
+                }            }).build());
 
 
     public static void register(IEventBus eventBus) {
