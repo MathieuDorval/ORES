@@ -22,14 +22,12 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ORES.MODID);
     public static final Map<String, DeferredBlock<Block>> REGISTERED_BLOCKS = new HashMap<>();
 
-    // Listes pour stocker les noms des blocs pour le tri dans les onglets créatifs
     public static final List<String> STORAGE_BLOCK_NAMES = new ArrayList<>();
     public static final List<String> ORE_BLOCK_NAMES = new ArrayList<>();
 
 
     // --- GÉNÉRATION AUTOMATIQUE ---
     static {
-        // Utilisation de la nouvelle liste unifiée
         for (ListMaterials material : ListMaterials.ALL_MATERIALS) {
             // Boucle pour les blocs de stockage
             for (ListVariants.BlockVariant variant : ListVariants.STORAGE_VARIANTS) {

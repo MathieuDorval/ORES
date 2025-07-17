@@ -24,9 +24,7 @@ public class ModItems {
 
     static {
         // --- Génération des Items ---
-        // Utilisation de la nouvelle liste unifiée
         for (ListMaterials material : ListMaterials.ALL_MATERIALS) {
-            // Cas spécial pour la gemme/l'item de base (ex: diamant, émeraude)
             if (material.selfExist()) {
                 String selfName = material.name();
                 DeferredItem<Item> selfItem = ITEMS.registerSimpleItem(selfName, new Item.Properties());
