@@ -3,11 +3,11 @@ package com.ores.block;
 import com.ores.ORES;
 import com.ores.core.ListMaterials;
 import com.ores.core.ListVariants;
+import com.ores.core.Registry; // On utilise la classe Registry
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -25,29 +26,27 @@ public class ModBlocks {
     public static final List<String> STORAGE_BLOCK_NAMES = new ArrayList<>();
     public static final List<String> ORE_BLOCK_NAMES = new ArrayList<>();
 
-
     // --- GÉNÉRATION AUTOMATIQUE ---
     static {
-        for (ListMaterials material : ListMaterials.ALL_MATERIALS) {
-            // Boucle pour les blocs de stockage
-            for (ListVariants.BlockVariant variant : ListVariants.STORAGE_VARIANTS) {
-                String blockName = String.format(variant.nameFormat(), material.name());
-                DeferredBlock<Block> storageBlock = BLOCKS.registerSimpleBlock(blockName,
-                        BlockBehaviour.Properties.of()
-                                .mapColor(material.color())
-                                .instrument(NoteBlockInstrument.BASEDRUM)
-                                .sound(material.sound())
-                                .strength(variant.destroyTime() * material.blockDestroyTimeFactor(), variant.explosionResistance() * material.blockExplosionResistanceFactor())
-                );
-                REGISTERED_BLOCKS.put(blockName, storageBlock);
-                STORAGE_BLOCK_NAMES.add(blockName);
-            }
+        // Boucle pour les blocs de stockage, utilisant maintenant le record BlockRegistryEntry
+        for (Registry.BlockRegistryEntry entry : Registry.STORAGE_BLOCK_ENTRIES) {
 
-            // Boucle pour les minerais
+            DeferredBlock<Block> storageBlock = BLOCKS.registerBlock(
+                    entry.name(),
+                    entry.blockConstructor(),
+                    entry.properties()
+            );
+
+            REGISTERED_BLOCKS.put(entry.name(), storageBlock);
+            STORAGE_BLOCK_NAMES.add(entry.name());
+        }
+
+        // Boucle pour les minerais (inchangée pour le moment)
+        for (ListMaterials material : ListMaterials.ALL_MATERIALS) {
             for (ListVariants.OreVariant variant : ListVariants.ORE_VARIANTS) {
                 String oreName = variant.name() + "_" + material.name() + "_ore";
                 DeferredBlock<Block> oreBlock = BLOCKS.registerBlock(oreName,
-                        (properties) -> new DropExperienceBlock(UniformInt.of(0, 0), properties),
+                        (props) -> new DropExperienceBlock(UniformInt.of(0, 0), props),
                         BlockBehaviour.Properties.of()
                                 .mapColor(variant.mapColor())
                                 .instrument(variant.instrument())

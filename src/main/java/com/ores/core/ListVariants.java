@@ -1,33 +1,55 @@
 package com.ores.core;
 
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SandBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import java.util.List;
+import java.util.function.Function;
 
 public class ListVariants {
 
     /**
      * Définit les propriétés d'une variante de bloc.
+     * Ajout de blockConstructor pour définir le type de bloc dynamiquement.
      */
-    public record BlockVariant(String nameFormat, float destroyTime, float explosionResistance) {}
+    public record BlockVariant(
+            String nameFormat,
+            Function<BlockBehaviour.Properties, ? extends Block> blockConstructor,
+            float destroyTime,
+            float explosionResistance,
+            Object friction
+    ) {}
 
     /**
      * Définit les propriétés d'une variante de minerai.
      */
-    public record OreVariant(String name, float destroyTime, float explosionResistance, MapColor mapColor, SoundType soundType, NoteBlockInstrument instrument) {}
+    public record OreVariant(
+            String name,
+            float destroyTime,
+            float explosionResistance,
+            MapColor mapColor,
+            SoundType soundType,
+            NoteBlockInstrument instrument
+    ) {}
 
     /**
      * Définit les propriétés d'une variante d'item simple.
      */
-    public record ItemVariant(String nameFormat) {}
+    public record ItemVariant(
+            String nameFormat
+    ) {}
 
     /**
      * Liste des variantes pour les blocs de stockage (blocs pleins, blocs de matériaux bruts).
+     * Le constructeur est maintenant défini ici. Pour le moment, c'est Block::new pour tous.
      */
     public static final List<BlockVariant> STORAGE_VARIANTS = List.of(
-            new BlockVariant("%s_block", 5.0F, 6.0F),
-            new BlockVariant("raw_%s_block", 5.0F, 6.0F)
+            new BlockVariant("%s_block", Block::new, 5.0F, 6.0F, 0.6F),
+            new BlockVariant("raw_%s_block", Block::new, 5.0F, 6.0F, false),
+            new BlockVariant("dust_%s_block", Block::new, 5.0F, 6.0F, false)
     );
 
     /**
