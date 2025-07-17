@@ -6,9 +6,6 @@ import java.util.List;
 
 public class ListMaterials {
 
-    /**
-     * Le record inclut maintenant 'isRedstoneLike' pour définir le comportement du minerai.
-     */
     public record Material(
             String name,
             boolean selfExist,
@@ -18,9 +15,9 @@ public class ListMaterials {
             float blockExplosionResistanceFactor,
             float oreDestroyTimeFactor,
             float oreExplosionResistanceFactor,
-            int minOreXP,
-            int maxOreXP,
-            boolean isRedstoneLike // Nouveau paramètre
+            int oreMinXP,
+            int oreMaxXP,
+            boolean isRedstoneLike
     ) {}
 
     public static final List<Material> ALL_MATERIALS = List.of(

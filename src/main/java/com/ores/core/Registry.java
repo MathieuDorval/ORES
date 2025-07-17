@@ -22,21 +22,21 @@ public class Registry {
     static {
         for (ListMaterials.Material material : ListMaterials.ALL_MATERIALS) {
             for (ListVariants.BlockVariant variant : ListVariants.BLOCKS_STORAGE_VARIANTS) {
-                String blockName = String.format(variant.nameFormat(), material.name());
+                String blockName = String.format(variant.ID(), material.name());
                 BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
                         .mapColor(material.color())
                         .instrument(NoteBlockInstrument.BASEDRUM)
                         .sound(material.sound())
                         .strength(variant.destroyTime() * material.blockDestroyTimeFactor(), variant.explosionResistance() * material.blockExplosionResistanceFactor());
                 Function<BlockBehaviour.Properties, ? extends Block> constructor = switch (variant.blockType()) {
-                    case FALLING_BLOCK -> (props) -> new CustomBlocks.CustomFallingBlock(props, variant.dropsOnBreak());
+                    case FALLING_BLOCK -> (props) -> new CustomBlocks.CustomFallingBlock(props, variant.dropsOnFalling());
                     case DROP_EXPERIENCE_BLOCK -> (props) -> new DropExperienceBlock(UniformInt.of(2, 5), props);
                     default -> Block::new;
                 };
                 BLOCKS_STORAGE_ENTRIES.add(new BlockRegistryEntry(blockName, constructor, properties));
             }
             for (ListVariants.OreVariant variant : ListVariants.BLOCKS_ORE_VARIANTS) {
-                String oreName = variant.name() + "_" + material.name() + "_ore";
+                String oreName = variant.ID() + "_" + material.name() + "_ore";
                 BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
                         .mapColor(variant.mapColor())
                         .instrument(variant.instrument())
@@ -48,13 +48,13 @@ public class Registry {
                 if (material.isRedstoneLike()) {
                     properties.lightLevel(state -> state.getValue(CustomBlocks.CustomRedstoneOreBlock.LIT) ? 9 : 0);
                     constructor = switch(variant.blockType()) {
-                        case FALLING_BLOCK -> (props) -> new CustomBlocks.CustomFallingRedstoneOreBlock(props, UniformInt.of(material.minOreXP(), material.maxOreXP()), material.color().col);
-                        default -> (props) -> new CustomBlocks.CustomRedstoneOreBlock(props, UniformInt.of(material.minOreXP(), material.maxOreXP()), material.color().col);
+                        case FALLING_BLOCK -> (props) -> new CustomBlocks.CustomFallingRedstoneOreBlock(props, UniformInt.of(material.oreMinXP(), material.oreMaxXP()), material.color().col);
+                        default -> (props) -> new CustomBlocks.CustomRedstoneOreBlock(props, UniformInt.of(material.oreMinXP(), material.oreMaxXP()), material.color().col);
                     };
                 } else {
                     constructor = switch(variant.blockType()) {
-                        case FALLING_BLOCK -> (props) -> new CustomBlocks.CustomFallingOreBlock(props, UniformInt.of(material.minOreXP(), material.maxOreXP()));
-                        default -> (props) -> new DropExperienceBlock(UniformInt.of(material.minOreXP(), material.maxOreXP()), props);
+                        case FALLING_BLOCK -> (props) -> new CustomBlocks.CustomFallingOreBlock(props, UniformInt.of(material.oreMinXP(), material.oreMaxXP()));
+                        default -> (props) -> new DropExperienceBlock(UniformInt.of(material.oreMinXP(), material.oreMaxXP()), props);
                     };
                 }
                 BLOCKS_ORE_ENTRIES.add(new BlockRegistryEntry(oreName, constructor, properties));
@@ -63,7 +63,7 @@ public class Registry {
                 ITEMS_SIMPLE_ENTRIES.add(new ItemRegistryEntry(material.name(), new Item.Properties()));
             }
             for (ListVariants.ItemVariant variant : ListVariants.ITEMS_SIMPLE_VARIANTS) {
-                String itemName = String.format(variant.nameFormat(), material.name());
+                String itemName = String.format(variant.ID(), material.name());
                 ITEMS_SIMPLE_ENTRIES.add(new ItemRegistryEntry(itemName, new Item.Properties()));
             }
         }

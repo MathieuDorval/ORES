@@ -16,19 +16,16 @@ public class ListVariants {
     }
 
     public record BlockVariant(
-            String nameFormat,
+            String ID,
             BlockType blockType,
             float destroyTime,
             float explosionResistance,
             Object friction,
-            boolean dropsOnBreak
+            boolean dropsOnFalling
     ) {}
 
-    /**
-     * Le record OreVariant utilise maintenant l'énumération BlockType.
-     */
     public record OreVariant(
-            String name,
+            String ID,
             BlockType blockType, // Remplacement de isFalling par BlockType
             float destroyTime,
             float explosionResistance,
@@ -38,7 +35,7 @@ public class ListVariants {
     ) {}
 
     public record ItemVariant(
-            String nameFormat
+            String ID
     ) {}
 
     public static final List<BlockVariant> BLOCKS_STORAGE_VARIANTS = List.of(
@@ -47,9 +44,7 @@ public class ListVariants {
             new BlockVariant("dust_%s_block", BlockType.FALLING_BLOCK, 1.5F, 1.5F, false, true)
     );
 
-    /**
-     * La liste des minerais utilise maintenant BlockType pour définir leur comportement.
-     */
+
     public static final List<OreVariant> BLOCKS_ORE_VARIANTS = List.of(
             new OreVariant("stone", BlockType.BLOCK, 3.0F, 3.0F, MapColor.STONE, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
             new OreVariant("granite", BlockType.BLOCK, 3.0F, 3.0F, MapColor.DIRT, SoundType.STONE, NoteBlockInstrument.BASEDRUM),
@@ -67,7 +62,7 @@ public class ListVariants {
             new OreVariant("dirt", BlockType.BLOCK, 1.5F, 3.0F, MapColor.DIRT, SoundType.GRAVEL, NoteBlockInstrument.BASEDRUM),
             new OreVariant("sand", BlockType.FALLING_BLOCK, 1.5F, 3.0F, MapColor.SAND, SoundType.SAND, NoteBlockInstrument.SNARE),
             new OreVariant("gravel", BlockType.FALLING_BLOCK, 1.6F, 3.0F, MapColor.STONE, SoundType.GRAVEL, NoteBlockInstrument.SNARE),
-            new OreVariant("soul_sand", BlockType.REDSTONE_ORE_BLOCK, 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SAND, NoteBlockInstrument.SNARE),
+            new OreVariant("soul_sand", BlockType.BLOCK, 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SAND, NoteBlockInstrument.SNARE),
             new OreVariant("soul_soil", BlockType.BLOCK, 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SOIL, NoteBlockInstrument.SNARE)
     );
 
