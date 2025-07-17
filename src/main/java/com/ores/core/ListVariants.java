@@ -1,4 +1,4 @@
-package com.ores.core.variants;
+package com.ores.core;
 
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -8,7 +8,7 @@ import java.util.List;
 public class ListVariants {
 
     /**
-     * Définit les propriétés d'une variante de bloc de stockage.
+     * Définit les propriétés d'une variante de bloc.
      */
     public record BlockVariant(String nameFormat, float destroyTime, float explosionResistance) {}
 
@@ -16,6 +16,11 @@ public class ListVariants {
      * Définit les propriétés d'une variante de minerai.
      */
     public record OreVariant(String name, float destroyTime, float explosionResistance, MapColor mapColor, SoundType soundType, NoteBlockInstrument instrument) {}
+
+    /**
+     * Définit les propriétés d'une variante d'item simple.
+     */
+    public record ItemVariant(String nameFormat) {}
 
     /**
      * Liste des variantes pour les blocs de stockage (blocs pleins, blocs de matériaux bruts).
@@ -47,5 +52,16 @@ public class ListVariants {
             new OreVariant("gravel", 1.6F, 3.0F, MapColor.STONE, SoundType.GRAVEL, NoteBlockInstrument.SNARE),
             new OreVariant("soul_sand", 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SAND, NoteBlockInstrument.SNARE),
             new OreVariant("soul_soil", 1.5F, 3.0F, MapColor.COLOR_BROWN, SoundType.SOUL_SOIL, NoteBlockInstrument.SNARE)
+    );
+
+    /**
+     * Liste des variantes pour les items simples (lingots, pépites, etc.).
+     */
+    public static final List<ItemVariant> SIMPLE_ITEM_VARIANTS = List.of(
+            new ItemVariant("raw_%s"),
+            new ItemVariant("%s_ingot"),
+            new ItemVariant("%s_nugget"),
+            new ItemVariant("%s_dust"),
+            new ItemVariant("%s_scrap")
     );
 }

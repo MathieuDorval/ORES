@@ -2,8 +2,7 @@ package com.ores.block;
 
 import com.ores.ORES;
 import com.ores.core.ListMaterials;
-import com.ores.core.Material;
-import com.ores.core.variants.ListVariants;
+import com.ores.core.ListVariants;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
@@ -30,7 +29,8 @@ public class ModBlocks {
 
     // --- GÉNÉRATION AUTOMATIQUE ---
     static {
-        for (Material material : ListMaterials.ALL_MATERIALS) {
+        // Utilisation de la nouvelle liste unifiée
+        for (ListMaterials material : ListMaterials.ALL_MATERIALS) {
             // Boucle pour les blocs de stockage
             for (ListVariants.BlockVariant variant : ListVariants.STORAGE_VARIANTS) {
                 String blockName = String.format(variant.nameFormat(), material.name());
@@ -42,7 +42,7 @@ public class ModBlocks {
                                 .strength(variant.destroyTime() * material.blockDestroyTimeFactor(), variant.explosionResistance() * material.blockExplosionResistanceFactor())
                 );
                 REGISTERED_BLOCKS.put(blockName, storageBlock);
-                STORAGE_BLOCK_NAMES.add(blockName); // Ajout du nom à la liste des blocs de stockage
+                STORAGE_BLOCK_NAMES.add(blockName);
             }
 
             // Boucle pour les minerais
@@ -58,7 +58,7 @@ public class ModBlocks {
                                 .requiresCorrectToolForDrops()
                 );
                 REGISTERED_BLOCKS.put(oreName, oreBlock);
-                ORE_BLOCK_NAMES.add(oreName); // Ajout du nom à la liste des minerais
+                ORE_BLOCK_NAMES.add(oreName);
             }
         }
     }
