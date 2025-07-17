@@ -10,7 +10,9 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
 
@@ -18,41 +20,48 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ORES.MODID);
 
     public static final Map<String, Supplier<? extends Item>> REGISTERED_ITEMS = new HashMap<>();
+    public static final List<String> SIMPLE_ITEM_NAMES = new ArrayList<>();
 
     static {
         // --- Génération des Items de base ---
         for (Material material : ListMaterials.ALL_MATERIALS) {
-            // Enregistre une gemme SEULEMENT si le matériau est une gemme
+            // Enregistre une gemme SEULEMENT si le matériau SelfExist
             if (material.selfExist()) {
-                String gemName = material.name();
-                DeferredItem<Item> gemItem = ITEMS.registerSimpleItem(gemName, new Item.Properties());
-                REGISTERED_ITEMS.put(gemName, gemItem);
+                String selfName = material.name();
+                DeferredItem<Item> selfItem = ITEMS.registerSimpleItem(selfName, new Item.Properties());
+                REGISTERED_ITEMS.put(selfName, selfItem);
+                SIMPLE_ITEM_NAMES.add(selfName);
             }
 
             // Enregistre un matériau brut (ex: raw_iron)
             String rawName = "raw_" + material.name();
             DeferredItem<Item> rawItem = ITEMS.registerSimpleItem(rawName, new Item.Properties());
             REGISTERED_ITEMS.put(rawName, rawItem);
+            SIMPLE_ITEM_NAMES.add(rawName);
 
             // Enregistre un lingot pour TOUS les matériaux
             String ingotName = material.name() + "_ingot";
             DeferredItem<Item> ingotItem = ITEMS.registerSimpleItem(ingotName, new Item.Properties());
             REGISTERED_ITEMS.put(ingotName, ingotItem);
+            SIMPLE_ITEM_NAMES.add(ingotName);
 
             // Enregistre une pépite pour chaque matériau
             String nuggetName = material.name() + "_nugget";
             DeferredItem<Item> nuggetItem = ITEMS.registerSimpleItem(nuggetName, new Item.Properties());
             REGISTERED_ITEMS.put(nuggetName, nuggetItem);
+            SIMPLE_ITEM_NAMES.add(nuggetName);
 
             // Enregistre une poussière pour chaque matériau
             String dustName = material.name() + "_dust";
             DeferredItem<Item> dustItem = ITEMS.registerSimpleItem(dustName, new Item.Properties());
             REGISTERED_ITEMS.put(dustName, dustItem);
+            SIMPLE_ITEM_NAMES.add(dustName);
 
             // Enregistre un débris pour chaque matériau
             String scrapName = material.name() + "_scrap";
             DeferredItem<Item> scrapItem = ITEMS.registerSimpleItem(scrapName, new Item.Properties());
             REGISTERED_ITEMS.put(scrapName, scrapItem);
+            SIMPLE_ITEM_NAMES.add(scrapName);
         }
 
         // --- Génération des BlockItems ---

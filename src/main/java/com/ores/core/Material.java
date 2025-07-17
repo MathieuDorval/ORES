@@ -8,6 +8,10 @@ public record Material(
         String name,
         MapColor color,
         SoundType sound,
-        boolean selfExist
+        boolean selfExist,
+        float blockDestroyTimeFactor,
+        float blockExplosionResistanceFactor,
+        float oreDestroyTimeFactor,
+        float oreExplosionResistanceFactor
 ) {
 }
