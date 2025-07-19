@@ -36,6 +36,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Optional;
 
 public class CustomBlocks {
+    // --- BLOCS DE BASE PERSONNALISÉS DE L'UTILISATEUR ---
     // FALLING BLOCK
     public static class CustomFallingBlock extends FallingBlock {
         private final boolean dropsOnBreak;
@@ -102,4 +103,26 @@ public class CustomBlocks {
         @Override public int getDustColor(@NotNull BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos) { return this.particleColor; }
     }
 
+    // --- NOUVEAUX BLOCS ÉMETTEURS DE REDSTONE ---
+    // BLOC SOLIDE ÉMETTEUR
+    public static class CustomPoweredBlock extends Block {
+        private final int power;
+        public static final MapCodec<CustomPoweredBlock> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(propertiesCodec(), Codec.INT.fieldOf("power").forGetter(b -> b.power)).apply(instance, CustomPoweredBlock::new));
+        public CustomPoweredBlock(Properties properties, int power) { super(properties); this.power = power; }
+        @Override protected @NotNull MapCodec<? extends Block> codec() { return CODEC; }
+        @Override public boolean isSignalSource(@NotNull BlockState pState) { return true; }
+        @Override public int getSignal(@NotNull BlockState pBlockState, @NotNull BlockGetter pBlockAccess, @NotNull BlockPos pPos, @NotNull Direction pSide) { return this.power; }
+    }
+    // BLOC TOMBANT ÉMETTEUR
+    public static class CustomPoweredFallingBlock extends FallingBlock {
+        private final int power;
+        private final boolean dropsOnBreak;
+        public static final MapCodec<CustomPoweredFallingBlock> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(propertiesCodec(), Codec.INT.fieldOf("power").forGetter(b -> b.power), Codec.BOOL.fieldOf("drops_on_break").forGetter(b -> b.dropsOnBreak)).apply(instance, CustomPoweredFallingBlock::new));
+        public CustomPoweredFallingBlock(Properties properties, int power, boolean dropsOnBreak) { super(properties); this.power = power; this.dropsOnBreak = dropsOnBreak; }
+        @Override protected @NotNull MapCodec<? extends FallingBlock> codec() { return CODEC; }
+        @Override public boolean isSignalSource(@NotNull BlockState pState) { return true; }
+        @Override public int getSignal(@NotNull BlockState pBlockState, @NotNull BlockGetter pBlockAccess, @NotNull BlockPos pPos, @NotNull Direction pSide) { return this.power; }
+        @Override protected void falling(FallingBlockEntity entity) { entity.dropItem = this.dropsOnBreak; }
+        @Override public int getDustColor(BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos) { return state.getMapColor(getter, pos).col; }
+    }
 }

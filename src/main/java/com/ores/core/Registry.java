@@ -1,6 +1,7 @@
 package com.ores.core;
 
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
@@ -21,7 +22,6 @@ public class Registry {
     public static final List<BlockRegistryEntry> BLOCKS_ORE_ENTRIES = new ArrayList<>();
     public static final List<ItemRegistryEntry> ITEMS_SIMPLE_ENTRIES = new ArrayList<>();
 
-    // La logique est maintenant dans une méthode d'initialisation
     public static void initialize() {
         for (ListMaterials.Material material : ListMaterials.ALL_MATERIALS) {
             // --- BLOCS DE STOCKAGE ---
@@ -39,21 +39,73 @@ public class Registry {
                 applyOptionalFloatProperty(properties, variant.speedFactor(), material.speedFactor(), properties::speedFactor);
                 applyOptionalLightProperty(properties, variant.lightLevel(), material.lightLevel());
 
-                Function<BlockBehaviour.Properties, ? extends Block> constructor = switch (variant.blockType()) {
-                    case FALLING_BLOCK -> (props) -> new CustomBlocks.CustomFallingBlock(props, variant.dropsOnFalling());
-                    case DROP_EXPERIENCE_BLOCK -> (props) -> new DropExperienceBlock(UniformInt.of(2, 5), props);
-                    default -> Block::new;
-                };
+                if (variant.pushReaction() != null) properties.pushReaction(variant.pushReaction());
+                if (variant.isRedstoneConductor() != null) properties.isRedstoneConductor((s, l, p) -> variant.isRedstoneConductor());
+                if (variant.ignitedByLava()) properties.ignitedByLava();
+
+                Integer matPower = material.redstonePower();
+                Integer varPower = variant.redstonePower();
+                Integer finalPower = null;
+
+                if (varPower != null) {
+                    if (varPower == 0) {
+                        if (matPower != null) {
+                            finalPower = matPower;
+                        }
+                    } else {
+                        if (matPower != null && matPower > 0) {
+                            finalPower = Math.max(matPower, varPower);
+                        } else {
+                            finalPower = varPower;
+                        }
+                    }
+                }
+
+                boolean isPowered = finalPower != null && finalPower > 0;
+
+                Function<BlockBehaviour.Properties, ? extends Block> constructor;
+                final Integer powerValue = finalPower; // Variable effective finale pour la lambda
+
+                switch (variant.blockType()) {
+                    case FALLING_BLOCK:
+                        constructor = isPowered ?
+                                (props) -> new CustomBlocks.CustomPoweredFallingBlock(props, powerValue, variant.dropsOnFalling()) :
+                                (props) -> new CustomBlocks.CustomFallingBlock(props, variant.dropsOnFalling());
+                        break;
+                    case DROP_EXPERIENCE_BLOCK:
+                        constructor = (props) -> new DropExperienceBlock(UniformInt.of(2, 5), props);
+                        break;
+                    default:
+                        constructor = isPowered ?
+                                (props) -> new CustomBlocks.CustomPoweredBlock(props, powerValue) :
+                                Block::new;
+                        break;
+                }
+
 
                 Item.Properties itemProperties = new Item.Properties();
+                if (material.rarity().ordinal() > variant.rarity().ordinal()) {
+                    itemProperties.rarity(material.rarity());
+                } else if (variant.rarity() != Rarity.COMMON) {
+                    itemProperties.rarity(variant.rarity());
+                }
                 if (material.fireResistant() || variant.fireResistant()) itemProperties.fireResistant();
+                Object matStacksTo = material.stacksTo();
+                Object varStacksTo = variant.stacksTo();
+                if (matStacksTo instanceof Integer matStack && varStacksTo instanceof Integer varStack) {
+                    itemProperties.stacksTo(Math.min(matStack, varStack));
+                } else if (varStacksTo instanceof Integer varStack) {
+                    itemProperties.stacksTo(varStack);
+                } else if (matStacksTo instanceof Integer matStack && varStacksTo instanceof Boolean && (Boolean)varStacksTo) {
+                    itemProperties.stacksTo(matStack);
+                }
 
                 BLOCKS_STORAGE_ENTRIES.add(new BlockRegistryEntry(blockName, constructor, properties, itemProperties));
             }
 
             // --- MINERAIS ---
             for (ListVariants.OreVariant variant : ListVariants.BLOCKS_ORE_VARIANTS) {
-                String oreName = variant.ID() + "_" + material.name() + "_ore";
+                String oreName = String.format(variant.ID(), material.name());
                 BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
                         .mapColor(variant.mapColor())
                         .instrument(variant.instrument())
@@ -62,6 +114,10 @@ public class Registry {
 
                 if (variant.requiresCorrectToolForDrops()) properties.requiresCorrectToolForDrops();
                 applyOptionalLightProperty(properties, variant.lightLevel(), material.lightLevel());
+
+                if (variant.pushReaction() != null) properties.pushReaction(variant.pushReaction());
+                if (variant.isRedstoneConductor() != null) properties.isRedstoneConductor((s, l, p) -> variant.isRedstoneConductor());
+                if (variant.ignitedByLava()) properties.ignitedByLava();
 
                 Function<BlockBehaviour.Properties, ? extends Block> constructor;
                 if (material.isRedstoneLike()) {
@@ -89,6 +145,15 @@ public class Registry {
                 if (material.rarity() != Rarity.COMMON) properties.rarity(material.rarity());
                 if (material.stacksTo() instanceof Integer stackSize) properties.stacksTo(stackSize);
                 if (material.fireResistant()) properties.fireResistant();
+                if (material.foodFactors() != null) {
+                    FoodProperties.Builder foodBuilder = new FoodProperties.Builder()
+                            .nutrition((int)material.foodFactors().nutritionFactor())
+                            .saturationModifier(material.foodFactors().saturationFactor());
+                    if (material.foodFactors().canAlwaysEat()) {
+                        foodBuilder.alwaysEdible();
+                    }
+                    properties.food(foodBuilder.build());
+                }
                 ITEMS_SIMPLE_ENTRIES.add(new ItemRegistryEntry(material.name(), properties));
             }
             for (ListVariants.ItemVariant variant : ListVariants.ITEMS_SIMPLE_VARIANTS) {
@@ -104,11 +169,28 @@ public class Registry {
                 Object varStacksTo = variant.stacksTo();
                 if (matStacksTo instanceof Integer matStack && varStacksTo instanceof Integer varStack) {
                     properties.stacksTo(Math.min(matStack, varStack));
-                } else if (matStacksTo instanceof Integer matStack) {
-                    properties.stacksTo(matStack);
                 } else if (varStacksTo instanceof Integer varStack) {
                     properties.stacksTo(varStack);
+                } else if (matStacksTo instanceof Integer matStack && varStacksTo instanceof Boolean && (Boolean)varStacksTo) {
+                    properties.stacksTo(matStack);
                 }
+
+                if (variant.nutrition() > 0 && material.foodFactors() != null) {
+                    int finalNutrition = (int) (variant.nutrition() * material.foodFactors().nutritionFactor());
+                    float finalSaturationModifier = variant.saturationModifier() * material.foodFactors().saturationFactor();
+                    boolean canAlwaysEat = variant.canAlwaysEat() || material.foodFactors().canAlwaysEat();
+
+                    FoodProperties.Builder foodBuilder = new FoodProperties.Builder()
+                            .nutrition(finalNutrition)
+                            .saturationModifier(finalSaturationModifier);
+
+                    if(canAlwaysEat) {
+                        foodBuilder.alwaysEdible();
+                    }
+
+                    properties.food(foodBuilder.build());
+                }
+
                 ITEMS_SIMPLE_ENTRIES.add(new ItemRegistryEntry(itemName, properties));
             }
         }
