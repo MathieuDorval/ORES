@@ -14,34 +14,15 @@ import java.util.function.Function;
 
 public class Registry {
 
-    // LISTES D'ENREGISTREMENT
-    public record BlockRegistryEntry(String ID, Function<BlockBehaviour.Properties, ? extends Block> blockConstructor, BlockBehaviour.Properties properties) {}
+    public record BlockRegistryEntry(String ID, Function<BlockBehaviour.Properties, ? extends Block> blockConstructor, BlockBehaviour.Properties properties, Item.Properties itemProperties) {}
     public record ItemRegistryEntry(String ID, Item.Properties properties) {}
+
     public static final List<BlockRegistryEntry> BLOCKS_STORAGE_ENTRIES = new ArrayList<>();
     public static final List<BlockRegistryEntry> BLOCKS_ORE_ENTRIES = new ArrayList<>();
     public static final List<ItemRegistryEntry> ITEMS_SIMPLE_ENTRIES = new ArrayList<>();
 
-    private static void applyOptionalFloatProperty(BlockBehaviour.Properties properties, Object variantValue, Object materialValue, Consumer<Float> propertyApplier) {
-        if (variantValue instanceof Boolean && (Boolean) variantValue && materialValue instanceof Float matValue) {
-            propertyApplier.accept(matValue);
-        }
-        else if (variantValue instanceof Float varValue) {
-            float valueToApply = (materialValue instanceof Float matValue) ? Math.max(varValue, matValue) : varValue;
-            propertyApplier.accept(valueToApply);
-        }
-    }
-
-    private static void applyOptionalLightProperty(BlockBehaviour.Properties properties, Object variantValue, Object materialValue) {
-        if (variantValue instanceof Boolean && (Boolean) variantValue && materialValue instanceof Integer matValue) {
-            properties.lightLevel(s -> matValue);
-        }
-        else if (variantValue instanceof Integer varValue) {
-            int valueToApply = (materialValue instanceof Integer matValue) ? Math.max(varValue, matValue) : varValue;
-            properties.lightLevel(s -> valueToApply);
-        }
-    }
-
-    static {
+    // La logique est maintenant dans une méthode d'initialisation
+    public static void initialize() {
         for (ListMaterials.Material material : ListMaterials.ALL_MATERIALS) {
             // --- BLOCS DE STOCKAGE ---
             for (ListVariants.BlockVariant variant : ListVariants.BLOCKS_STORAGE_VARIANTS) {
@@ -52,10 +33,7 @@ public class Registry {
                         .sound(material.sound())
                         .strength(variant.destroyTime() * material.blockDestroyTimeFactor(), variant.explosionResistance() * material.blockExplosionResistanceFactor());
 
-                if (variant.requiresCorrectToolForDrops()) {
-                    properties.requiresCorrectToolForDrops();
-                }
-
+                if (variant.requiresCorrectToolForDrops()) properties.requiresCorrectToolForDrops();
                 applyOptionalFloatProperty(properties, variant.friction(), material.friction(), properties::friction);
                 applyOptionalFloatProperty(properties, variant.jumpFactor(), material.jumpFactor(), properties::jumpFactor);
                 applyOptionalFloatProperty(properties, variant.speedFactor(), material.speedFactor(), properties::speedFactor);
@@ -66,7 +44,11 @@ public class Registry {
                     case DROP_EXPERIENCE_BLOCK -> (props) -> new DropExperienceBlock(UniformInt.of(2, 5), props);
                     default -> Block::new;
                 };
-                BLOCKS_STORAGE_ENTRIES.add(new BlockRegistryEntry(blockName, constructor, properties));
+
+                Item.Properties itemProperties = new Item.Properties();
+                if (material.fireResistant() || variant.fireResistant()) itemProperties.fireResistant();
+
+                BLOCKS_STORAGE_ENTRIES.add(new BlockRegistryEntry(blockName, constructor, properties, itemProperties));
             }
 
             // --- MINERAIS ---
@@ -78,10 +60,7 @@ public class Registry {
                         .sound(variant.soundType())
                         .strength(variant.destroyTime() * material.oreDestroyTimeFactor(), variant.explosionResistance() * material.oreExplosionResistanceFactor());
 
-                if (variant.requiresCorrectToolForDrops()) {
-                    properties.requiresCorrectToolForDrops();
-                }
-
+                if (variant.requiresCorrectToolForDrops()) properties.requiresCorrectToolForDrops();
                 applyOptionalLightProperty(properties, variant.lightLevel(), material.lightLevel());
 
                 Function<BlockBehaviour.Properties, ? extends Block> constructor;
@@ -97,7 +76,11 @@ public class Registry {
                         default -> (props) -> new DropExperienceBlock(UniformInt.of(material.oreMinXP(), material.oreMaxXP()), props);
                     };
                 }
-                BLOCKS_ORE_ENTRIES.add(new BlockRegistryEntry(oreName, constructor, properties));
+
+                Item.Properties itemProperties = new Item.Properties();
+                if (material.fireResistant() || variant.fireResistant()) itemProperties.fireResistant();
+
+                BLOCKS_ORE_ENTRIES.add(new BlockRegistryEntry(oreName, constructor, properties, itemProperties));
             }
 
             // --- ITEMS ---
@@ -110,22 +93,13 @@ public class Registry {
             }
             for (ListVariants.ItemVariant variant : ListVariants.ITEMS_SIMPLE_VARIANTS) {
                 String itemName = String.format(variant.ID(), material.name());
-
                 Item.Properties properties = new Item.Properties();
-
-                // Logique pour la rareté : on prend la plus élevée des deux
                 if (material.rarity().ordinal() > variant.rarity().ordinal()) {
                     properties.rarity(material.rarity());
                 } else if (variant.rarity() != Rarity.COMMON) {
                     properties.rarity(variant.rarity());
                 }
-
-                // Logique pour la résistance au feu : si l'un des deux est vrai, on l'applique
-                if (material.fireResistant() || variant.fireResistant()) {
-                    properties.fireResistant();
-                }
-
-                // Logique pour la taille des stacks : on prend le plus petit des deux
+                if (material.fireResistant() || variant.fireResistant()) properties.fireResistant();
                 Object matStacksTo = material.stacksTo();
                 Object varStacksTo = variant.stacksTo();
                 if (matStacksTo instanceof Integer matStack && varStacksTo instanceof Integer varStack) {
@@ -135,9 +109,11 @@ public class Registry {
                 } else if (varStacksTo instanceof Integer varStack) {
                     properties.stacksTo(varStack);
                 }
-
                 ITEMS_SIMPLE_ENTRIES.add(new ItemRegistryEntry(itemName, properties));
             }
         }
     }
+
+    private static void applyOptionalFloatProperty(BlockBehaviour.Properties properties, Object variantValue, Object materialValue, Consumer<Float> propertyApplier) { if (variantValue instanceof Boolean && (Boolean) variantValue && materialValue instanceof Float matValue) { propertyApplier.accept(matValue); } else if (variantValue instanceof Float varValue) { float valueToApply = (materialValue instanceof Float matValue) ? Math.max(varValue, matValue) : varValue; propertyApplier.accept(valueToApply); } }
+    private static void applyOptionalLightProperty(BlockBehaviour.Properties properties, Object variantValue, Object materialValue) { if (variantValue instanceof Boolean && (Boolean) variantValue && materialValue instanceof Integer matValue) { properties.lightLevel(s -> matValue); } else if (variantValue instanceof Integer varValue) { int valueToApply = (materialValue instanceof Integer matValue) ? Math.max(varValue, matValue) : varValue; properties.lightLevel(s -> valueToApply); } }
 }

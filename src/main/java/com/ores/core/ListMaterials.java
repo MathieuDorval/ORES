@@ -7,9 +7,6 @@ import java.util.List;
 
 public class ListMaterials {
 
-    /**
-     * Le record Material inclut maintenant les propriétés de base des items.
-     */
     public record Material(
             String name,
             boolean selfExist,
@@ -32,7 +29,7 @@ public class ListMaterials {
     ) {}
 
     public static final List<Material> ALL_MATERIALS = List.of(
-            // Vanilla Materials
+
             new Material("coal", true, MapColor.COLOR_BLACK, SoundType.STONE, 1.0F, 1.0F, 1.0F, 1.0F, 0, 2, false, false, false, false, false, Rarity.COMMON, false, false),
             new Material("copper", false, MapColor.COLOR_ORANGE, SoundType.COPPER, 1.0F, 1.0F, 1.0F, 1.0F, 0, 0, false, false, false, false, false, Rarity.COMMON, false, false),
             new Material("iron", false, MapColor.METAL, SoundType.METAL, 1.0F, 1.0F, 1.0F, 1.0F, 0, 0, false, false, false, false, false, Rarity.COMMON, false, false),
