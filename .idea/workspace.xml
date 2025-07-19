@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="914b2fe8-85d2-47c1-a870-d47761cb3ec6" name="Changes" comment="datagen | ModelProvider">
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/6223150e-278c-4e2d-90f4-0f0dbdee11e6/.globals.work.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/6223150e-278c-4e2d-90f4-0f0dbdee11e6/.strings.work.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/6223150e-278c-4e2d-90f4-0f0dbdee11e6/_.work.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/6223150e-278c-4e2d-90f4-0f0dbdee11e6/buildfingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/6223150e-278c-4e2d-90f4-0f0dbdee11e6/entry.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/6223150e-278c-4e2d-90f4-0f0dbdee11e6/projectfingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/6223150e-278c-4e2d-90f4-0f0dbdee11e6/work.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/664ij9cbcxjvv1lx1tb2frly/candidates.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/dldglf89r85qk1dz1icwrkoep/candidates.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/eca596f9-a261-48d4-bea8-0e7dbc8ee906/.globals.work.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/eca596f9-a261-48d4-bea8-0e7dbc8ee906/.strings.work.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/eca596f9-a261-48d4-bea8-0e7dbc8ee906/_.work.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/eca596f9-a261-48d4-bea8-0e7dbc8ee906/buildfingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/eca596f9-a261-48d4-bea8-0e7dbc8ee906/entry.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/eca596f9-a261-48d4-bea8-0e7dbc8ee906/projectfingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/eca596f9-a261-48d4-bea8-0e7dbc8ee906/work.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/ores/core/CustomBlocks$CustomPoweredBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/ores/core/CustomBlocks$CustomPoweredFallingBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/ores/core/ListMaterials$FoodFactors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/moddev/dataLegacyClasspath.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/moddev/dataLog4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/moddev/dataRunProgramArgs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/moddev/dataRunVmArgs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/configuration-cache/664ij9cbcxjvv1lx1tb2frly/d5jl1af3dkr8e5yikyhblf9ea/configuration-cache-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/configuration-cache/dldglf89r85qk1dz1icwrkoep/lhv3j5xtdjlnz3e5e6yr5ieo/configuration-cache-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/configuration-cache/ekilqonjd86b2w151gy9jb775/3xcmdu6uso14gqyjzc9zkpok5/configuration-cache-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-07-19-22.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-07-19-23.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-07-19-24.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/.cache/d88303de0ebcbdd4f50ac6d113872b7561905670" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/amethyst_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/andesite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/basalt_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/calcite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/coal_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/cobblestone_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/copper_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/deepslate_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diamond_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/diorite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dirt_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_amethyst_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_coal_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_copper_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_diamond_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_emerald_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_gold_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_iron_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_lapis_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_netherite_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_quartz_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/dust_redstone_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/emerald_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/end_stone_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gold_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/granite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/gravel_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/iron_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/lapis_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherite_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/netherrack_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/obsidian_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/polished_basalt_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/quartz_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_amethyst_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_coal_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_copper_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_diamond_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_emerald_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_gold_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_iron_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_lapis_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_netherite_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_quartz_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/raw_redstone_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/redstone_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/sand_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_sand_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/soul_soil_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/blockstates/tuff_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/amethyst.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/amethyst_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/amethyst_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/amethyst_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/amethyst_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/amethyst_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/andesite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/basalt_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/calcite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/coal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/coal_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/coal_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/coal_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/coal_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/coal_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/cobblestone_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/copper_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/copper_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/copper_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/copper_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/copper_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/deepslate_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diamond.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diamond_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diamond_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diamond_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diamond_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diamond_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/diorite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dirt_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_amethyst_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_coal_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_copper_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_diamond_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_emerald_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_gold_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_iron_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_lapis_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_netherite_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_quartz_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/dust_redstone_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/emerald.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/emerald_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/emerald_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/emerald_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/emerald_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/emerald_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/end_stone_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gold_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gold_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gold_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gold_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gold_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/granite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/gravel_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/iron_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/iron_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/iron_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/iron_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/iron_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/lapis.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/lapis_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/lapis_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/lapis_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/lapis_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/lapis_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherite_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherite_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherite_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherite_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherite_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/netherrack_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/obsidian_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/polished_basalt_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/quartz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/quartz_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/quartz_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/quartz_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/quartz_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/quartz_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_amethyst.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_amethyst_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_coal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_coal_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_copper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_copper_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_diamond.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_diamond_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_emerald.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_emerald_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_gold.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_gold_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_iron.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_iron_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_lapis.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_lapis_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_netherite.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_netherite_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_quartz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_quartz_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_redstone.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/raw_redstone_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/redstone.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/redstone_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/redstone_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/redstone_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/redstone_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/redstone_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/sand_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_sand_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/soul_soil_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/items/tuff_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/amethyst_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/andesite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/basalt_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/calcite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/coal_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/cobblestone_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/copper_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/deepslate_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diamond_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/diorite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dirt_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_amethyst_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_coal_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_copper_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_diamond_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_emerald_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_gold_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_iron_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_lapis_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_netherite_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_quartz_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/dust_redstone_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/emerald_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/end_stone_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gold_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/granite_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/gravel_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/iron_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/lapis_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherite_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/netherrack_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/obsidian_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/polished_basalt_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/quartz_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_amethyst_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_coal_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_copper_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_diamond_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_emerald_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_gold_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_iron_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_lapis_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_netherite_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_quartz_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/raw_redstone_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/redstone_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/sand_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_sand_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/soul_soil_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_amethyst_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_coal_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_copper_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_diamond_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_emerald_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_gold_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_iron_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_lapis_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_netherite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_quartz_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/block/tuff_redstone_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/amethyst.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/amethyst_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/amethyst_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/amethyst_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/amethyst_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/coal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/coal_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/coal_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/coal_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/coal_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/copper_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/copper_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/copper_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/copper_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/diamond.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/diamond_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/diamond_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/diamond_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/diamond_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/emerald.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/emerald_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/emerald_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/emerald_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/emerald_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/gold_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/gold_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/gold_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/gold_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/iron_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/iron_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/iron_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/iron_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/lapis.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/lapis_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/lapis_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/lapis_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/lapis_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/netherite_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/netherite_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/netherite_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/netherite_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/quartz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/quartz_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/quartz_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/quartz_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/quartz_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_amethyst.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_coal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_copper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_diamond.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_emerald.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_gold.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_iron.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_lapis.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_netherite.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_quartz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/raw_redstone.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/redstone.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/redstone_dust.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/redstone_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/redstone_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/ores/models/item/redstone_scrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ores/datagen/DataGenerators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ores/datagen/ModModelProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/ores-21.7.01.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ores-21.7.01.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ListVariants$BlockType.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ListVariants$BlockVariant.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ListVariants$ItemVariant.class.uniqueId7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ListVariants$OreVariant.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ListVariants.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Registry$1.class.uniqueId5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Registry$BlockRegistryEntry.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Registry$ItemRegistryEntry.class.uniqueId8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Registry.class.uniqueId6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/downloadAssets/nfrt_artifact_manifest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/downloadAssets/nfrt_artifact_manifest.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-10.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-11.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-12.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-13.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-13.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-14.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-14.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-15.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-15.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-16.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-16.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-17.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-17.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-18.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-18.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-19.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-19.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-20.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-20.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-21.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-21.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2025-07-19-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-07-19-9.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/random_sequences.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/random_sequences.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ORES" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ORES" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ORES" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ORES" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="mod development" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MathieuDorval&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MathieuDorval/ORES.git&quot;,
+    &quot;accountId&quot;: &quot;5ff68826-8c43-4ed1-a42e-f77717d1dfd1&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/ores/block/ModBlocks.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2zwl4kQAN7gHQ8StevIlynf8X4A" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.ORES [:net.neoforged.devlaunch.Main.main()].executor": "Run",
+    "Gradle.ORES [buildDependents].executor": "Run",
+    "Gradle.ORES [buildNeeded].executor": "Run",
+    "Gradle.ORES [build].executor": "Run",
+    "Gradle.ORES [clean].executor": "Run",
+    "Gradle.ORES [runClient].executor": "Run",
+    "Gradle.ORES [runData].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.ORES [runClient]">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="ORES.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\mathi\\code\\Modding\\ORES\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\mathi\\code\\Modding\\ORES\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=ores%%C:\\Users\\mathi\\code\\Modding\\ORES\\build\\classes\\java\\main;ores%%C:\\Users\\mathi\\code\\Modding\\ORES\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Data" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="ORES.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\mathi\\code\\Modding\\ORES\\build\\moddev\\dataRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\mathi\\code\\Modding\\ORES\\build\\moddev\\dataRunVmArgs.txt -Dfml.modFolders=ores%%C:\\Users\\mathi\\code\\Modding\\ORES\\build\\classes\\java\\main;ores%%C:\\Users\\mathi\\code\\Modding\\ORES\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTestServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="ORES.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\mathi\\code\\Modding\\ORES\\build\\moddev\\gameTestServerRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\mathi\\code\\Modding\\ORES\\build\\moddev\\gameTestServerRunVmArgs.txt -Dfml.modFolders=ores%%C:\\Users\\mathi\\code\\Modding\\ORES\\build\\classes\\java\\main;ores%%C:\\Users\\mathi\\code\\Modding\\ORES\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="ORES.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\mathi\\code\\Modding\\ORES\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\mathi\\code\\Modding\\ORES\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=ores%%C:\\Users\\mathi\\code\\Modding\\ORES\\build\\classes\\java\\main;ores%%C:\\Users\\mathi\\code\\Modding\\ORES\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ORES [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildNeeded" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ORES [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ORES [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ORES [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ORES [runData]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runData" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ORES [runClient]" />
+        <item itemvalue="Gradle.ORES [runData]" />
+        <item itemvalue="Gradle.ORES [buildNeeded]" />
+        <item itemvalue="Gradle.ORES [build]" />
+        <item itemvalue="Gradle.ORES [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="914b2fe8-85d2-47c1-a870-d47761cb3ec6" name="Changes" comment="" />
+      <created>1752649826128</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752649826128</updated>
+      <workItem from="1752649827282" duration="1961000" />
+      <workItem from="1752682590783" duration="10539000" />
+      <workItem from="1752731873332" duration="19454000" />
+      <workItem from="1752766489780" duration="12047000" />
+      <workItem from="1752926555765" duration="11770000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1752650557295</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752650557295</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial block and item commit">
+      <option name="closed" value="true" />
+      <created>1752682726877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752682726877</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add item and block and ore dynamically">
+      <option name="closed" value="true" />
+      <created>1752692291675</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752692291675</updated>
+    </task>
+    <task id="LOCAL-00004" summary="all vanilla ores | block/raw block | gem ingot nugget dust scrap">
+      <option name="closed" value="true" />
+      <created>1752694162308</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752694162308</updated>
+    </task>
+    <task id="LOCAL-00005" summary="dynamic update creative tabs">
+      <option name="closed" value="true" />
+      <created>1752736384709</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752736384709</updated>
+    </task>
+    <task id="LOCAL-00006" summary="move ListVariants to new class">
+      <option name="closed" value="true" />
+      <created>1752738265026</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752738265026</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Unify MaterialList">
+      <option name="closed" value="true" />
+      <created>1752738794173</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752738794173</updated>
+    </task>
+    <task id="LOCAL-00008" summary="clean code">
+      <option name="closed" value="true" />
+      <created>1752740036899</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1752740036899</updated>
+    </task>
+    <task id="LOCAL-00009" summary="dynamic change for block creation">
+      <option name="closed" value="true" />
+      <created>1752746860632</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752746860632</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Registry Blocks Ores Items">
+      <option name="closed" value="true" />
+      <created>1752750604597</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1752750604597</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fallingOre">
+      <option name="closed" value="true" />
+      <created>1752752772728</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1752752772728</updated>
+    </task>
+    <task id="LOCAL-00012" summary="redstone ore | CustomBlocks Class">
+      <option name="closed" value="true" />
+      <created>1752773456053</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1752773456053</updated>
+    </task>
+    <task id="LOCAL-00013" summary="commit">
+      <option name="closed" value="true" />
+      <created>1752777380628</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1752777380628</updated>
+    </task>
+    <task id="LOCAL-00014" summary="dynamic properties blocks and items">
+      <option name="closed" value="true" />
+      <created>1752782261380</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1752782261380</updated>
+    </task>
+    <task id="LOCAL-00015" summary="properties for BlockItems">
+      <option name="closed" value="true" />
+      <created>1752929054380</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1752929054380</updated>
+    </task>
+    <task id="LOCAL-00016" summary="clear">
+      <option name="closed" value="true" />
+      <created>1752929777480</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1752929777480</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add properties BLOCK &amp; ITEM">
+      <option name="closed" value="true" />
+      <created>1752934496307</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1752934496307</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="initial block and item commit" />
+    <MESSAGE value="add item and block and ore dynamically" />
+    <MESSAGE value="all vanilla ores | block/raw block | gem ingot nugget dust scrap" />
+    <MESSAGE value="dynamic update creative tabs" />
+    <MESSAGE value="move ListVariants to new class" />
+    <MESSAGE value="Unify MaterialList" />
+    <MESSAGE value="clean code" />
+    <MESSAGE value="dynamic change for block creation" />
+    <MESSAGE value="Registry Blocks Ores Items" />
+    <MESSAGE value="fallingOre" />
+    <MESSAGE value="redstone ore | CustomBlocks Class" />
+    <MESSAGE value="commit" />
+    <MESSAGE value="dynamic properties blocks and items" />
+    <MESSAGE value="properties for BlockItems" />
+    <MESSAGE value="clear" />
+    <MESSAGE value="add properties BLOCK &amp; ITEM" />
+    <MESSAGE value="datagen | ModelProvider" />
+    <option name="LAST_COMMIT_MESSAGE" value="datagen | ModelProvider" />
+  </component>
+</project>

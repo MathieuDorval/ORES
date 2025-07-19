@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ores:block/netherrack_lapis_ore"
+  }
+}

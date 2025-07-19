@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ores:block/soul_soil_copper_ore"
+  }
+}

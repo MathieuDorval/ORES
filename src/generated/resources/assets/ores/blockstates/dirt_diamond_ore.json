@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ores:block/dirt_diamond_ore"
+    }
+  }
+}
